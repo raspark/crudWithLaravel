@@ -22,6 +22,13 @@
             </div>
         </div>
         <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
-        <button type="submit" class="btn btn-success">Update</button>
+        <div class="row">
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-success">Update</button>
+            </div>
+            <div class="col-md-6 justify-content-end d-flex">
+                <a href="{{ route('icecreams.index') }}" class="btn btn-primary">BACK</a>
+            </div>
+        </div>
     </form>
 @endsection
